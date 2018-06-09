@@ -1,0 +1,225 @@
+body *{
+	letter-spacing: 1px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav>li>a {
+	    padding: 10px 30px;
+	    color: #fff;	    
+	    text-transform: uppercase;
+	    transition: .7s all ease;
+	}
+	.nav>li>a:focus, .nav>li>a:hover{
+		background-color: #37B1FE;
+	}
+	.navbar-nav>li.active>a {
+	    background: #37B1FE;
+	}
+}
+
+#banner{
+	text-align: center;
+}
+.logo-img{
+	max-width: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    right: calc( 50% - 150px);
+}
+#banner p{
+	font-size: 18px;
+	margin-top: -150px;
+}
+
+.section{
+	padding: 100px 0;
+}
+
+.stepper .nav-tabs {
+  position: relative;
+  border-bottom: none;
+}
+.stepper .nav-tabs > li {
+  width: 20%;
+  position: relative;
+}
+.stepper .nav-tabs > li:after {
+	content: '';
+	position: absolute;
+	background: #f1f1f1;
+	display: block;
+	width: 100%;
+	height: 8px;
+	top: 45px;
+	left: 50%;
+	z-index: 1;
+}
+.stepper .nav-tabs > li.completed::after {
+  background: #37B1FE;
+}
+.stepper .nav-tabs > li:last-child::after {
+  background: transparent;
+}
+.stepper .nav-tabs > li.active:last-child .round-tab {
+  background: #37B1FE;
+}
+.stepper .nav-tabs > li.active:last-child .round-tab::after {
+  content: '✔';
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  display: block;
+}
+.stepper .nav-tabs [data-toggle='tab'] {
+  width: 25px;
+  height: 25px;
+  margin: 20px auto;
+  border: none;
+  padding: 0;
+  color: #f1f1f1;
+}
+.stepper .tab-pane {
+  position: relative;
+  padding-top: 50px;
+}
+.stepper .round-tab {
+  	width: 60px;
+	height: 60px;
+	line-height: 43px;
+	display: inline-block;
+	background: #000;
+	border: 5px solid #37B1FE;
+	color: #fff;
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+.stepper .completed .round-tab {
+  background: #000;
+}
+.stepper .active .round-tab::after {
+  display: none;
+}
+.stepper .nav-tabs > li.active::after,
+.stepper .nav-tabs > li.completed::after{
+  background: #000;
+}
+.stepper .nav-tabs > li.active:last-child::after,
+.stepper .nav-tabs > li.completed:last-child::after{
+  display: none;
+}
+
+.stepper .disabled .round-tab {
+  background: #C6C6C6;
+  color: #D5D5D5;
+  border-color: #C3EBFE;
+}
+.stepper .disabled .round-tab::after {
+  display: none;
+}
+
+/* HTML5 Boilerplate accessible hidden styles */
+[type="radio"] {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px;
+}
+
+[type="radio"] + span {
+  display: block;
+}
+
+/* the basic, unchecked style */
+[type="radio"] + span:before {
+  	content: '';
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: -0.4em;
+	border-radius: 1em;
+	border: 0.3em solid #37B1FE;
+	margin-right: 0.75em;
+	transition: 0.5s ease all;
+}
+
+/* the checked style using the :checked pseudo class */
+[type="radio"]:checked + span:before {
+  background: #000;
+}
+
+/* never forget focus styling */
+[type="radio"]:focus + span:after {
+  content: '\0020\2190';
+  font-size: 1.5em;
+  line-height: 1;
+  vertical-align: -0.125em;
+}
+
+div.radios-div{
+	margin: 20px 0;
+	margin-left: -20px;
+}
+
+.radio{
+	margin: 20px 0;
+	cursor: pointer;
+}
+
+.rect-button{
+	padding: 10px 20px;
+	background: #000;
+	color: #fff;
+	border: 5px solid #37B1FE;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 60px 20px;
+}
+
+.slider.slider-horizontal{
+	width: 80%;
+	margin-top: 20px;
+}
+
+.slider-track, .slider-selection{
+	background-image: linear-gradient(to bottom,#37B1FE 0,#37B1FE 100%);
+}
+
+.slider-handle{
+	background: #fff;
+	border: 3px solid #37B1FE;
+}
+
+.footer{
+	padding: 50px 0;
+}
