@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
         // Add support for payment type switching.
 
         //Initialize tooltips
-        $tooltips.tooltip();
+        // $tooltips.tooltip();
 
         //Wizard
         $tab_toggle.on('show.bs.tab', function(e) {
@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
         		$target.parent().prev().removeClass('disabled').addClass('completed');
         	}
         	if ($target.parent().hasClass('disabled')) {
-        		return false;
+        		$target.parent().removeClass('disabled').addClass('active');
         	}
         });
 
