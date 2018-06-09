@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -63,7 +64,7 @@
 						</a>
 					</li>
 					<li role="presentation" class="disabled">
-						<a class="persistant-disabled" href="#stepper-step-4" data-toggle="tab" aria-controls="stepper-step-4" role="tab" title="Complete">
+						<a class="persistant-disabled" href="#stepper-step-4" data-toggle="tab" aria-controls="stepper-step-4" role="tab" title="Step 4">
 							<span class="round-tab">4</span>
 						</a>
 					</li>
@@ -131,53 +132,256 @@
 									</label>
 								</div>
 							</div>
-						</div>						
+						</div>
+						<hr>
+						<div class="text-right">
+							<a class="btn next-step">Next</a>
+						</div>					
 					</div>
 					<div class="tab-pane fade" role="tabpanel" id="stepper-step-2">
-						<h3>2. Enter Payment Information</h3>
-						<p>This is step 2</p>
-					</div>
-					<div class="tab-pane fade" role="tabpanel" id="stepper-step-3">
-						<h3 class="hs">3. Review and Submit Payment</h3>
-						<p>This is step 3</p>
-					</div>
-					<div class="tab-pane fade" role="tabpanel" id="stepper-step-4">
-						<h3>This is step 4</h3>
-					</div>
-					<div class="tab-pane fade" role="tabpanel" id="stepper-step-5">
-						<h3>4. All done!</h3>
-						<p>You have successfully completed all steps.</p>
+						<br><br><br>
+						<h2 class="text-center text-uppercase">Account Details</h3>
+							<hr>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>First Name</label>
+										<input class="form-control">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Last Name</label>
+										<input class="form-control">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>E-Mail</label>
+										<input class="form-control">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>City</label>
+										<input class="form-control">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Post Code</label>
+										<input class="form-control">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>Country</label>
+										<select class="form-control">
+											<option>Canada</option>
+											<option>United States</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="text-right">
+								<a class="btn prev-step">Back</a>
+								<a class="btn next-step">Next</a>
+							</div>						
+						</div>
+						<div class="tab-pane fade" role="tabpanel" id="stepper-step-3">
+							<br><br><br>
+							<h3 class="text-uppercase">Payment</h3>
+							<hr>
+							<p>Please select teh preferred payment method to use on this order.</p>
+							<div>
+								<img src="assets/img/paypal.png" width="200">
+							</div>
+							<br><br>
+							<h3 class="text-uppercase">Account</h3>
+							<hr>
+							<p>Please provide Epic Games E-Mail, password and your in-game character name ofr your booster</p>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label>E-Mail</label>
+										<input class="form-control">
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label>Password</label>
+										<input class="form-control">
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label>Character Name</label>
+										<input class="form-control">
+									</div>
+								</div>
+							</div>
+							<br><br>
+							<h3 class="text-uppercase">Contacts</h3>
+							<hr>
+							<p>Once you pay how would you like to be contacted by our company to assign teh booster?</p>
+							<div class="checkbox">
+								<label><input type="checkbox"> <img src="assets/img/discord_logo.png" width="50"></label>
+							</div>
+							<hr width="30%">
+							<div class="checkbox">
+								<label><input type="checkbox"> <img src="assets/img/email_logo.png" width="50"></label>
+							</div>
+							<hr width="30%">
+							<div class="checkbox">
+								<label><input type="checkbox"> <img src="assets/img/skype_logo.png" width="50"></label>
+							</div>
+							<hr>
+							<div class="text-right">
+								<a class="btn prev-step">Back</a>
+								<a class="btn next-step">Next</a>
+							</div>
+						</div>
+						<div class="tab-pane fade" role="tabpanel" id="stepper-step-4">
+							<br><br><br>
+							<h3 class="text-uppercase">Checkout</h3>
+							<hr>
+							<p>You have successfully created an order! Now you can pay using your preferred payment method</p>
+							<br><br>
+							<img src="assets/img/paypal.png" width="200">
+							<hr>
+							<div class="text-right">
+								<a class="btn prev-step">Back</a>
+								<a class="btn next-step">Next</a>
+							</div>
+						</div>
+						<div class="tab-pane fade" role="tabpanel" id="stepper-step-5">
+							<br><br><br>
+							<h3 class="text-uppercase">
+								<img src="assets/img/complete.jpg" width="100"> All done!
+							</h3>
+							<hr>
+							<p>Thank you, John!  We will contact you soon for your account john-account.</p>
+							<hr>
+							<div class="text-right">
+								<a class="btn prev-step">Back</a>
+							</div>
+						</div>
 					</div>
 				</div>
+
 			</div>
+		</section>
 
-		</div>
-	</section>
+		<section class="section text-center">
+			<div class="row">
+				<div class="col-sm-2 col-sm-offset-5">
+					<h2 class="text-center text-uppercase">Total:</h2>
+					<hr>
+					<h2 class="text-center text-uppercase">$80.00</h2>
+					<hr>
+				</div>
+			</div>
+			<button class="rect-button">Add to cart</button>
+			<button class="rect-button">Checkout</button>
+		</section>
 
-	<section class="section text-center">
-		<button class="rect-button">Add to cart</button>
-		<button class="rect-button">Checkout</button>
-	</section>
+		<section>
+			<div class="container">
+				<h2 class="text-center text-uppercase"><b>Faq</b></h2><br>
+			</div>
+		</section>
+		<section class="text-center bg-gray">
+			<div class="container">
+				<div class="panel-group" id="accordion">
+					<div class="panel">
+						<div class="panel-heading">
+							<h4 class="panel-title text-uppercase">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+									How long will it take you to finish my boost?
+								</a>
+							</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+								minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							<h4 class="panel-title text-uppercase">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+									How does duo queue and squad work?
+								</a>
+							</h4>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse">
+							<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+								minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							<h4 class="panel-title text-uppercase">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+									How does this service work?
+								</a>
+							</h4>
+						</div>
+						<div id="collapse3" class="panel-collapse collapse">
+							<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+								minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							<h4 class="panel-title text-uppercase">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+									Can I get a refund?
+								</a>
+							</h4>
+						</div>
+						<div id="collapse4" class="panel-collapse collapse">
+							<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+								minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							<h4 class="panel-title text-uppercase">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+									Is it possible for my account to be banned?
+								</a>
+							</h4>
+						</div>
+						<div id="collapse5" class="panel-collapse collapse">
+							<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+								minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.</div>
+						</div>
+					</div>
+				</div>
 
-	<section class="text-center">
-		<div class="container">
-			<h2 class="text-uppercase"><b>Faq</b></h2>
-			<br>
-			<h4 class="text-uppercase">How long will it take you to finish my boost?</h4>
-			<h4 class="text-uppercase">How does duo queue and squad work?</h4>
-			<h4 class="text-uppercase">How does this service work?</h4>
-			<h4 class="text-uppercase">Can I get a refund?</h4>
-			<h4 class="text-uppercase">Is it possible for my account to be banned?</h4>
+			</div>
+		</section>
+		<section class="footer">
+			<div class="container">
+				<p class="text-center">
+					By Accessing this website, you are agreeing to be bound by these web site terms and conditions of use. All applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms. You are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trade mark law.
+				</p>
+			</div>
+		</section>
 
-		</div>
-	</section>
-	<section class="footer">
-		<div class="container">
-			<p class="text-center">
-				By Accessing this website, you are agreeing to be bound by these web site terms and conditions of use. All applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms. You are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trade mark law.
-			</p>
-		</div>
-	</section>
-
-</body>
-</html>
+	</body>
+	</html>
