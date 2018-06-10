@@ -1,15 +1,15 @@
 jQuery(document).ready(function($) {
 
-	$(window).scroll(function(event) {
-		event.preventDefault();
-		/* Act on the event */
-		var top = $(this).scrollTop();
-		if( top > 50){
-			$('.navbar-fixed-top').fadeOut(300);
-		}else{
-			$('.navbar-fixed-top').fadeIn(300);
-		}
-	});
+	// $(window).scroll(function(event) {
+	// 	event.preventDefault();
+	// 	/* Act on the event */
+	// 	var top = $(this).scrollTop();
+	// 	if( top > 50){
+	// 		$('.navbar-fixed-top').fadeOut(300);
+	// 	}else{
+	// 		$('.navbar-fixed-top').fadeIn(300);
+	// 	}
+	// });
 
 
 	function triggerClick(elem) {
