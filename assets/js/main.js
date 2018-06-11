@@ -11,6 +11,17 @@ jQuery(document).ready(function($) {
 	// 	}
 	// });
 
+	$('.special').on('click', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		console.log($(this).parent().children('input').is(':checked'));
+		if($(this).parent().children('input').is(':checked')){
+			$(this).parent().children('input').prop('checked', false);
+		}else{
+			$(this).parent().children('input').prop('checked', true); 
+		}
+	});
+
 
 	function triggerClick(elem) {
 		$(elem).click();
