@@ -86,7 +86,7 @@ h1, h2, h3, h4{
 .stepper .nav-tabs > li:last-child::after {
   background: transparent;
 }
-.stepper .nav-tabs > li.active:last-child .round-tab {
+/*.stepper .nav-tabs > li.active:last-child .round-tab {
   background: #37B1FE;
 }
 .stepper .nav-tabs > li.active:last-child .round-tab::after {
@@ -98,7 +98,7 @@ h1, h2, h3, h4{
   margin: 0 auto;
   top: 0;
   display: block;
-}
+}*/
 .stepper .nav-tabs [data-toggle='tab'] {
   width: 25px;
   height: 25px;
@@ -269,4 +269,8 @@ div.radios-div{
 	border: 3px solid #37B1FE;
 	border-radius: 0;
 	margin: 5px;
+}
+
+.input-group-addon{
+	padding: 0 10px;
 }
